@@ -1,26 +1,26 @@
 class Awsom < Formula
   desc "k9s-like TUI for AWS SSO sessions"
   homepage "https://github.com/oleksiimorozenko/awsom"
-  version "0.1.0"
+  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/oleksiimorozenko/awsom/releases/download/v0.1.0/awsom-macos-arm64.tar.gz"
-      sha256 "14c660a61d530c4d35e097f8c27b8f4807975b9675daa9a29221a8fe88c74eca"
+      url "https://github.com/oleksiimorozenko/awsom/releases/download/v0.2.0/awsom-macos-arm64.tar.gz"
+      sha256 "216fff1e38ddd125cdd95acc9832574a63a9d239ddb92b72ad19944629489395"
     else
-      url "https://github.com/oleksiimorozenko/awsom/releases/download/v0.1.0/awsom-macos-amd64.tar.gz"
-      sha256 "888985a278d18e7f7855182cbbb1c7922f127313bae79ae06204e7d5ce324de2"
+      url "https://github.com/oleksiimorozenko/awsom/releases/download/v0.2.0/awsom-macos-amd64.tar.gz"
+      sha256 "048924bf8bb1da289e02c565cc2968f755198ab0d373a467efd6c86053c8086e"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/oleksiimorozenko/awsom/releases/download/v0.1.0/awsom-linux-arm64.tar.gz"
-      sha256 "c799b290580ae51176205569a73af94b20613d02f4eb72bf02af338327e2d1ad"
+      url "https://github.com/oleksiimorozenko/awsom/releases/download/v0.2.0/awsom-linux-arm64.tar.gz"
+      sha256 "dca3a4401047f3e412935d026b0c27cc9dbd557a688f9cabbecf940234174cbf"
     else
-      url "https://github.com/oleksiimorozenko/awsom/releases/download/v0.1.0/awsom-linux-amd64.tar.gz"
-      sha256 "59c09290456c57f43f1c8c8f6cd72ed5dc1e2f903c65339502dab202287889cb"
+      url "https://github.com/oleksiimorozenko/awsom/releases/download/v0.2.0/awsom-linux-amd64.tar.gz"
+      sha256 "72a3a837f609e9d529f444ff791033e5b8dd3bb9a87a22b30b5d4f8abb9eaac9"
     end
   end
 
