@@ -7,7 +7,7 @@ class Awsom < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/oleksiimorozenko/awsom/releases/download/v0.12.0/awsom-macos-amd64.tar.gz"
-      sha256 "26d7bc7c964f26ab1cb1a75487bbc2363b34910b6389ad8965b6b2a94416e78d"
+      sha256 "492cd208fe3a96a41397bf612c0c5aae58cbb059b9698ebeb76efae904eea056"
 
       def install
         bin.install "awsom"
@@ -15,7 +15,7 @@ class Awsom < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/oleksiimorozenko/awsom/releases/download/v0.12.0/awsom-macos-arm64.tar.gz"
-      sha256 "ac15df9ce399d4bbc44ce00a3e791a773a9bcb66dd3a04b1c31b5b1000045c1d"
+      sha256 "fd187e83f99a603d05fbe99366fe6117c2235196ec26debb3eaf31dfdba69044"
 
       def install
         bin.install "awsom"
@@ -26,7 +26,7 @@ class Awsom < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://github.com/oleksiimorozenko/awsom/releases/download/v0.12.0/awsom-linux-amd64.tar.gz"
-      sha256 "1dafc12ee896f3d2a8638a5c80ff8da6bb8a9fe3655a24eedb0bd0d20070e9d0"
+      sha256 "7730ffbad86b547129b06377b94b6d55366249d428fa484788cddd8f554cf5da"
 
       def install
         bin.install "awsom"
@@ -34,7 +34,7 @@ class Awsom < Formula
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://github.com/oleksiimorozenko/awsom/releases/download/v0.12.0/awsom-linux-arm64.tar.gz"
-      sha256 "afaf201688fd4f30ed567254b58cabbaaa692b885bbb20f306b5f263581ab14c"
+      sha256 "8e3f49362e579be80c0d332a93b6a4113aeac36b22996c1f57bea8a62a7589ad"
 
       def install
         bin.install "awsom"
