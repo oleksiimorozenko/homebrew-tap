@@ -1,21 +1,21 @@
 class Awsom < Formula
   desc "k9s-like TUI for AWS SSO sessions"
   homepage "https://github.com/oleksiimorozenko/awsom"
-  version "0.16.1"
+  version "0.17.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/oleksiimorozenko/awsom/releases/download/v0.16.1/awsom-macos-amd64.tar.gz"
-      sha256 "d9e0aa9a726657eed5ee513be80a3ddd6fa185564aeed95382b470e3025d66eb"
+      url "https://github.com/oleksiimorozenko/awsom/releases/download/v0.17.1/awsom-macos-amd64.tar.gz"
+      sha256 "3403f7f12515351e67da6c7af67a3e9ae51536c1126481f081bb30371847f495"
 
       def install
         bin.install "awsom"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/oleksiimorozenko/awsom/releases/download/v0.16.1/awsom-macos-arm64.tar.gz"
-      sha256 "250f955b96740fd02a3314f6ed9c5655d63fc5806b4e6663575f8bb3d60b362b"
+      url "https://github.com/oleksiimorozenko/awsom/releases/download/v0.17.1/awsom-macos-arm64.tar.gz"
+      sha256 "7325436f6481c894caec216c78cec18c93d17bfd2dcbbb12d1e9581a8fa700c4"
 
       def install
         bin.install "awsom"
@@ -25,16 +25,16 @@ class Awsom < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/oleksiimorozenko/awsom/releases/download/v0.16.1/awsom-linux-amd64.tar.gz"
-      sha256 "e2668eed698ec4ff22c8566e0358f75a4654ed3665a7aebb152ecf444706576d"
+      url "https://github.com/oleksiimorozenko/awsom/releases/download/v0.17.1/awsom-linux-amd64.tar.gz"
+      sha256 "40d04fdd5337e31ad6ebe5d4426925335ab8d0e992b28f52b66f217d21014394"
 
       def install
         bin.install "awsom"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/oleksiimorozenko/awsom/releases/download/v0.16.1/awsom-linux-arm64.tar.gz"
-      sha256 "8151b0ba02a6296978f9ab25465d2e551f92c3425050df2dfd8eb74ff1d6c786"
+      url "https://github.com/oleksiimorozenko/awsom/releases/download/v0.17.1/awsom-linux-arm64.tar.gz"
+      sha256 "aee8b0ce78a736354ad407f6c59c38e9f0cbe3cdf789961ca13d4602f9948f7e"
 
       def install
         bin.install "awsom"
